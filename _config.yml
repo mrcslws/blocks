@@ -1,0 +1,18 @@
+# Site settings
+title: Marcus Lewis
+description: Marcus's website
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mrcslws.com" # the base hostname & protocol for your site
+twitter_username: mrcslws
+github_username:  mrcslws
+
+# Build settings
+markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      categories: "blocks"

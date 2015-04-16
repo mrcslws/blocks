@@ -1,0 +1,63 @@
+---
+layout: blank
+title: Marcus Lewis
+---
+
+<style type="text/css">
+  body {
+  font-family: Calibri, Arial;
+  }
+
+  #wrapper {
+  max-width: 760px;
+  margin: 15px 0;
+  }
+
+  .topLevelSection {
+  margin-bottom:30px;
+  }
+
+  .sectionLabel:before {
+  content:"[";
+  }
+
+  .sectionLabel:after {
+  content:"]";
+  }
+</style>
+
+<div id="wrapper">
+  <div class="topLevelSection">
+    <h2>Hey, I'm <a href="https://twitter.com/mrcslws">Marcus</a>.</h2>
+    <p>I'll post stuff here.</p>
+  </div>
+  <div class="topLevelSection">
+    <span class="sectionLabel">Cool things that I made with others</span>
+    <ul>
+      <li>Here's my <a href="http://www.linkedin.com/pub/marcus-lewis/1a/593/a57">LinkedIn</a>.</li>
+    </ul>
+  </div>
+  <div class="topLevelSection">
+    <span class="sectionLabel">Cool things that I made by myself</span>
+    <ul>
+      <li>A WinDbg guide. For now, it's internal to Microsoft.</li>
+    </ul>
+  </div>
+  <div class="topLevelSection">
+    <span class="sectionLabel">Fooling around</span>
+    <ul>
+      <li>A <a href="/geocentric/">geocentric model of the solar system</a>, written in TypeScript</li>
+      <li>An <a href="/learning/2014/geb/mu">exploration of the MU-puzzle</a>, written in ClojureScript</li>
+      <li>A blog: <br />
+        <ul>
+          {% for post in site.posts %}
+          <li>
+            <span>{{ post.date | date: "%Y-%m-%-d" }}</span>
+            <span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+  </div>  
+</div>
