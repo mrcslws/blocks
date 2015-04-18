@@ -46,18 +46,19 @@ title: Marcus Lewis
   <div class="topLevelSection">
     <span class="sectionLabel">Fooling around</span>
     <ul>
-      <li>A <a href="/geocentric/">geocentric model of the solar system</a>, written in TypeScript</li>
-      <li>An <a href="/learning/2014/geb/mu">exploration of the MU-puzzle</a>, written in ClojureScript</li>
-      <li>A blog: <br />
-        <ul>
-          {% for post in site.posts %}
-          <li>
-            <span>{{ post.date | date: "%Y-%m-%-d" }}</span>
-            <span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-          </li>
-          {% endfor %}
-        </ul>
+      <li>2015 - <a href="CraftingImagesFromGraphs/">Crafting images from graphs</a>, exploring explorable images</li>
+      <li>2014 - An <a href="/learning/2014/geb/mu">exploration of the MU-puzzle</a>, written in ClojureScript</li>
+      <li>2011 - A <a href="/geocentric/">geocentric model of the solar system</a>, written in TypeScript</li>
+      <li>"Letters to the me of last week"<br />
+	<ul>
+	  {% for post in site.posts %}
+	  <li>
+	    <span>{{ post.date | date: "%Y-%m-%-d" }}</span>
+	    <span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+	  </li>
+	  {% endfor %}
+	</ul>
       </li>
     </ul>
-  </div>  
+  </div>
 </div>
