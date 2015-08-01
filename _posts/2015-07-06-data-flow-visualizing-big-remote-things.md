@@ -4,7 +4,7 @@ title: "Data flow: Visualizing big remote things"
 date:   2015-07-06 12:00:00
 ---
 
-_\[I'm actively working on this. This webpage is subject to change. I may even break the URL.\]_
+_\[This approach was flawed. I explain why in [Part 2]({% post_url 2015-07-30-data-flow-visualizing-big-remote-things-part-2 %}).\]_
 
 Here's an interesting problem.
 
@@ -463,19 +463,19 @@ Here's my first shot. Here's a subset of what I'd send to the server for the ini
 {:values [:ff-deps :fb-deps :strata :inputs]
  :methods [[:timestep]]
  :children {:regions
-	    {;; All regions
-	     :all-children
-	     {;; All layers
-	      :all-children {:values [:spec]
-			     :methods [[:active-columns]
-				       [:active-cells]
-				       [:source-of-bit 42]
-				       [:source-of-bit 43]
-				       [:source-of-bit 44]
-				       [:params]]
-			     :proxies [:proximal-sg
-				       :distal-sg]
-			     :children {:state {:values [:in-ff-bits]}}}}}}}
+		{;; All regions
+		 :all-children
+		 {;; All layers
+		  :all-children {:values [:spec]
+				 :methods [[:active-columns]
+					   [:active-cells]
+					   [:source-of-bit 42]
+					   [:source-of-bit 43]
+					   [:source-of-bit 44]
+					   [:params]]
+				 :proxies [:proximal-sg
+					   :distal-sg]
+				 :children {:state {:values [:in-ff-bits]}}}}}}}
 
 {% endhighlight %}
 
