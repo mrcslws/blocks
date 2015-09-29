@@ -24,41 +24,49 @@ title: Marcus Lewis
   .sectionLabel:after {
   content:"]";
   }
+
+  .sectionContent {
+  margin-left: 20px;
+  }
 </style>
 
 <div id="wrapper">
   <div class="topLevelSection">
-    <h2>Hey, I'm <a href="https://twitter.com/mrcslws">Marcus</a>.</h2>
-    <p>I'll post stuff here.</p>
+    <h2>Hey, I'm Marcus.</h2>
   </div>
   <div class="topLevelSection">
-    <span class="sectionLabel">Cool things that I made with others</span>
-    <ul>
-      <li>Here's my <a href="http://www.linkedin.com/pub/marcus-lewis/1a/593/a57">LinkedIn</a>.</li>
-    </ul>
+    <div class="sectionLabel">Things I want you to see</div>
+    <div class="sectionContent">
+      <p><a href="/gorilla/?path=hotgym.clj">Predicting power consumptions with HTM</a><br />
+        <em>A one-of-a-kind HTM study. I hope it's not one-of-a-kind for long.</em><br />
+        September 2015
+      </p>
+      <p>Debugging the product<br />
+        <em>For now, it's internal to Microsoft.</em><br />
+        October 2013</p>
+    </div>
   </div>
   <div class="topLevelSection">
-    <span class="sectionLabel">Cool things that I made by myself</span>
-    <ul>
-      <li>A WinDbg guide. For now, it's internal to Microsoft.</li>
-    </ul>
+    <div class="sectionLabel">Letters to the me of last week</div>
+    <div class="sectionContent">
+      {% for post in site.posts %}
+      <p>
+        <span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span><br />
+        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+      </p>
+      {% endfor %}
+    </div>
   </div>
   <div class="topLevelSection">
     <span class="sectionLabel">Fooling around</span>
-    <ul>
-      <li>2015 - <strong>[In progress]</strong> <a href="GraphicsFromGraphs/">Graphics from graphs</a>, exploring explorable images</li>
-      <li>2014 - An <a href="/learning/2014/geb/mu">exploration of the MU-puzzle</a>, written in ClojureScript</li>
-      <li>2011 - A <a href="/geocentric/">geocentric model of the solar system</a>, written in TypeScript</li>
-      <li>"Letters to the me of last week"<br />
-	<ul>
-	  {% for post in site.posts %}
-	  <li>
-	    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-	    <span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-	  </li>
-	  {% endfor %}
-	</ul>
-      </li>
-    </ul>
+    <div class="sectionContent">
+      <p><strong>[In progress]</strong> <a href="GraphicsFromGraphs/">Graphics from graphs</a>, exploring explorable images <br />
+      2015</p>
+      <p>An <a href="/learning/2014/geb/mu">exploration of the MU-puzzle</a>, playing with ClojureScript<br />
+      2014</p>
+      <p>A <a href="/geocentric/">geocentric model of the solar system</a>, playing with TypeScript<br />
+        2011</p>
+      <p><a href="https://twitter.com/mrcslws">Twitter</a> and <a href="http://www.linkedin.com/pub/marcus-lewis/1a/593/a57">LinkedIn</a></p>
+    </div>
   </div>
 </div>
