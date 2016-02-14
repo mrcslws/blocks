@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTM time series: Remix!"
+title: "HTM time series: Two charts, one scale"
 date:   2016-02-13 12:00:00
 ---
 
@@ -59,7 +59,7 @@ date:   2016-02-13 12:00:00
 
 This combines the two [previous](/blocks/2016/01/16/htm-column-time-series.html) [plots](/blocks/2016/01/31/htm-segment-time-series.html), giving them a shared x scale. It also redesigns the zoom/navigation experience. And it's significantly faster.
 
-In the [first post](/blocks/2016/01/16/htm-column-time-series.html), the main perf feature is that it samples the data. In the [second post](/blocks/2016/01/31/htm-segment-time-series.html) I moved away from `<rect/>`s and toward `<path/`s, making draws faster. In this post, I draw the path in data-space and scale/translate (a.k.a. "stretch") it into pixel-space. I use stretching for fast zooming, periodically redrawing the underlying path. "drawing" and "stretching" are two different things. Stretching is fast.
+In the [first post](/blocks/2016/01/16/htm-column-time-series.html), the main perf feature is that it samples the data. In the [second post](/blocks/2016/01/31/htm-segment-time-series.html) I moved away from `<rect/>`s and toward `<path/>`s, making draws faster. In this post, I draw the path in data-space and scale/translate (a.k.a. "stretch") it into pixel-space. I use stretching for fast zooming, periodically redrawing the underlying path. "drawing" and "stretching" are two different things. Stretching is fast.
 
 ## The code
 
