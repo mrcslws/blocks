@@ -36,7 +36,7 @@ code.
 [Link to snapshot](https://github.com/nupic-community/comportex/tree/779374d276ae15174d16c5ff5deab501f1f699e4)
 
 Felix elegantly
-[explained](http://floybix.github.io/2014/09/26/temporal-pooling-mechanism/)
+[explained](http://floybix.github.io/2014/09/26/temporal-pooling-mechanism)
 how this worked. Check out the "Mechanism" section.
 
 This approach was minimalistic. All it does is keep certain cells and

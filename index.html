@@ -17,14 +17,6 @@ title: Marcus Lewis
   margin-bottom:30px;
   }
 
-  .sectionLabel:before {
-  content:"[";
-  }
-
-  .sectionLabel:after {
-  content:"]";
-  }
-
   .sectionContent {
   margin-left: 20px;
   }
@@ -33,26 +25,10 @@ title: Marcus Lewis
 <div id="wrapper">
   <div class="topLevelSection">
     <h2>Hey, I'm Marcus.</h2>
+    <p>I study the brain. I work for <a href="http://numenta.com">Numenta</a>.</p>
   </div>
   <div class="topLevelSection">
-    <div class="sectionLabel">Things I want you to see</div>
-    <div class="sectionContent">
-      <p><a href="https://www.youtube.com/watch?v=rEQ2XVOnhDw" />See your HTM run</a>  <br />
-<em>A visual running environment, ready for NuPIC.</em><br />
-<a href="https://www.youtube.com/watch?v=OHSuydq2OW4">Q&amp;A</a> | <a href="https://github.com/nupic-community/sanity-nupic">Use it</a> <br />
-         November 2015
-      </p>
-      <p><a href="/gorilla/?path=hotgym.clj">Predicting power consumptions with HTM</a><br />
-        <em>A one-of-a-kind HTM study. I hope it's not one-of-a-kind for long.</em><br />
-        September 2015
-      </p>
-      <p>Debugging the product<br />
-        <em>For now, it's internal to Microsoft.</em><br />
-        October 2013</p>
-    </div>
-  </div>
-  <div class="topLevelSection">
-    <div class="sectionLabel">Letters to the me of last week</div>
+    <h4>Blog</h4>
     <div class="sectionContent">
       {% for post in site.posts %}
       <p>
@@ -63,11 +39,28 @@ title: Marcus Lewis
     </div>
   </div>
   <div class="topLevelSection">
-    <span class="sectionLabel">Fooling around</span>
+    <h4>Past projects</h4>
+    <div class="sectionContent">
+      <p><a href="https://www.youtube.com/watch?v=rEQ2XVOnhDw" />See your HTM run</a>  <br />
+<em>A visual running environment, ready for NuPIC.</em><br />
+<a href="https://www.youtube.com/watch?v=OHSuydq2OW4">Q&amp;A</a> | <a href="https://github.com/nupic-community/sanity-nupic">Use it</a> <br />
+         November 2015
+      </p>
+      <p><a href="/gorilla/?path=hotgym.clj">Predicting power consumptions with HTM</a><br />
+        <em>A visual HTM study.</em><br />
+        September 2015
+      </p>
+      <p>Debugging the product<br />
+        <em>For now, it's internal to Microsoft.</em><br />
+    October 2013</p>
+    </div>
+  </div>
+  <div class="topLevelSection">
+    <h4>Fooling around</h4>
     <div class="sectionContent">
       <p><a href="/stuff/2015.11.12.NuPIC-Oddities.html">First glance: NuPIC Oddities</a>, using my <a href="https://www.youtube.com/watch?v=rEQ2XVOnhDw">cool new toy</a><br />
       2015-11-12</p>
-      <p><strong>[In progress]</strong> <a href="GraphicsFromGraphs/">Graphics from graphs</a>, exploring explorable images<br />
+      <p><strong>[Unfinished]</strong> <a href="GraphicsFromGraphs/">Graphics from graphs</a>, exploring explorable images<br />
       2015</p>
       <p>An <a href="/learning/2014/geb/mu">exploration of the MU-puzzle</a>, playing with ClojureScript<br />
       2014</p>
